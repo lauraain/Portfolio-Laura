@@ -1,145 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laura Inês Lima Assunção - Portfólio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Laura Inês</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <h1>Laura Inês Lima Assunção</h1>
-    <button id="menu-toggle" class="menu-toggle">☰</button>
-    <nav>
-      <ul id="menu" class="menu">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <img src="WhatsApp Image 2025-06-22 at 14.30.24.jpeg" alt="Foto de Laura Inês Lima Assunção" class="foto-redonda">
-  </header>
 
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
- <p>
-    Sou uma profissional em constante evolução, com experiência nas áreas de desenvolvimento front-end, administração e logística. Atualmente estou cursando Análise e Desenvolvimento de Sistemas, unindo o raciocínio lógico da tecnologia com o senso organizacional da área administrativa.
-  </p>
-  <p>
-    Como desenvolvedora front-end freelancer, desenvolvo sites responsivos e interativos utilizando HTML5, CSS3 e JavaScript, com versionamento em GitHub. Também possuo vivência em rotinas administrativas e de almoxarifado, com atuação em sistemas ERP, controle de notas fiscais, requisições, e gestão de estoque.
-  </p>
-  <p>
-    Me destaco pela organização, pontualidade, facilidade em aprender e pela disposição para atuar em novos desafios. Busco oportunidades que permitam aplicar minhas competências técnicas e crescer profissionalmente.
-  </p>
-    <p><strong class="strong">DISPONIBILIDADE PARA VIAJAR</strong></p>
-  </section>
+    <!-- Canvas para partículas tech -->
+    <canvas id="techCanvas"></canvas>
 
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Sistema de computadores Windows</li>
-      <li>Administração</li>
-      <li>Atendimento telefônico e ao cliente</li>
-      <li>Desenvolvimento de sites com HTML, CSS e JavaScript</li>
-      <li>Digitação</li>
-      <li>Senso de organização</li>
-      <li>Análise e desenvolvimento de sistemas</li>
-    </ul>
-  </section>
+    <!-- Header / Navegação -->
+    <header>
+        <nav>
+            <div class="logo">Laura Inês</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
 
-  <section id="experiencia" class="experiencia-container">
-    <h2>Experiência Profissional</h2>
-    <div class="cargo">
-      <h3>Freelancer</h3>
-      <h4>Desenvolvedora Front-End</h4>
-      <span>Jan 2022 – atualmente</span>
-      <ul>
-        <li>Desenvolvimento de sites estáticos com HTML5, CSS3 e JavaScript</li>
-        <li>Animações e interações com JavaScript puro</li>
-        <li>Hospedagem no GitHub Pages</li>
-        <li>Versionamento com Git e GitHub</li>
-      </ul>
-    </div>
+    <!-- Sobre -->
+    <section id="sobre">
+        <img src="WhatsApp Image 2025-06-22 at 14.30.24.jpeg" alt="Foto de Laura Inês" class="perfil">
+        <h1>Olá, eu sou Laura Inês</h1>
+        <p>Sou formada em <strong>Análise e Desenvolvimento de Sistemas</strong> e atualmente curso pós-graduação em <strong>Engenharia de Software e Gestão em Tecnologia</strong>. Tenho paixão por criar soluções digitais funcionais e elegantes, aplicando boas práticas de desenvolvimento e design.</p>
+    </section>
 
-    <div class="cargo">
-      <h3>Itaueira Agropecuária </h3>
-      <h4>Auxiliar Administrativo</h4>
-      <span>Out 2024 – atualmente</span>
-      <ul>
-        <li>Baixas de notas, entrada de notas, ERP</li>
-        <li>Criação de transferências e requisições</li>
-        <li>Pontualidade e organização</li>
-      </ul>
-    </div>
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <h2>Minhas Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="icons8-html-5-50.png" alt="HTML" class="skill-icon"> HTML5</div>
+            <div class="skill"><img src="icons8-css3-50.png" alt="CSS" class="skill-icon"> CSS3</div>
+            <div class="skill"><img src="icons8-java-script-50.png" alt="JavaScript" class="skill-icon"> JavaScript</div>
+            <div class="skill"><img src="icons8-node-js-32.png" alt="Node.js" class="skill-icon"> Node.js</div>
+            <div class="skill"><img src="icons8-react-30.png" alt="React" class="skill-icon"> React</div>
+            <div class="skill"><img src="icons8-git-50.png" alt="Git" class="skill-icon"> Git / GitHub</div>
+            <div class="skill"> Banco de Dados (SQL / NoSQL)</div>
+            <div class="skill"> Design Responsivo</div>
+        </div>
+    </section>
 
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Convite Digital</h3>
+                <img src="captura convite.png" alt="Print do convite digital">
+                <p>Convite de aniversário interativo, criado com HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Sistema de Cadastro de Clientes</h3>
+                <img src="cadastro.png" alt="Print do sistema de cadastro">
+                <p>Sistema completo de cadastro e gerenciamento de clientes usando Node.js, HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Carrinho de Loja Virtual</h3>
+                <img src="carrinho.png" alt="Print da loja virtual">
+                <p>Desenvolvimento de e-commerce funcional com carrinho de compras e integração com WhatsApp.</p>
+            </div>
+            <div class="project-card">
+                <h3>Site sobre Violência Contra a Mulher</h3>
+                <img src="site para mulhers.png" alt="Print do site sobre violência">
+                <p>Site informativo e educativo sobre tipos de violência contra a mulher, incluindo recursos, leis e motivação, totalmente acessível e responsivo.</p>
+            </div>
+        </div>
+    </section>
 
-
-    <div class="cargo">
-      <h3>CooperShoes</h3>
-      <h4>Confeccionadora de Calçados</h4>
-      <span>Jun 2023 – Jan 2024</span>
-      <ul>
-        <li>Costura, revisão e operação de máquina</li>
-        <li>Limpeza e organização</li>
-      </ul>
-    </div>
-
-    <div class="cargo">
-      <h3>Vucabras</h3>
-      <h4>Aprendiz - Confeccionadora de Calçados</h4>
-      <span>Nov 2022 – Jun 2023</span>
-      <ul>
-        <li>Apresentação de seminários, limpeza, montagem e revisão</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="formacao" class="formacao-container">
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li>Análise e Desenvolvimento de Sistemas - Uniasselvi (2023-2025, em andamento)</li>
-      <li>Ciências Biológicas - Universidade Estadual do Ceará - UECE (trancado)</li>
-    </ul>
-  </section>
-
-  <section id="cursos" class="cursos-container">
-    <h2>Cursos Complementares</h2>
-    <ul>
-      <li>Informática Avançada 80h - Edune Cursos</li>
-      <li>Assistente Administrativo 160h - Senai</li>
-      <li>Assistente de RH 160h - Senai</li>
-      <li>Assistente de Contabilidade 160h - Senai</li>
-      <li>HTML5, CSS3 e JavaScript 200h - Gustavo Guanabara</li>
-      <li>Python 3 - 120h - Gustavo Guanabara</li>
-      <li>Algoritmo 40h - Gustavo Guanabara</li>
-      <li>Almoxarife 160h - Senai</li>
-    </ul>
-  </section>
-
+    <!-- Contato -->
     <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:ineslauraassuncao@gmail.com">ineslauraassuncao@gmail.com</a></p>
-    <p><a href="https://wa.me/5585981277224" target="_blank">Fale comigo no WhatsApp</a></p>
-    <p>Localização: Fortaleza - CE</p>
-  </section>
+        <h2>Contato</h2>
+        <p>Entre em contato comigo diretamente:</p>
 
+        <div class="contact-buttons">
+            <a href="mailto:ineslauraassuncao@gmail.com" class="contact-btn" target="_blank">✉ Email</a>
+            <a href="https://wa.me/5585991277224" class="contact-btn" target="_blank">📱 WhatsApp</a>
+            <a href="https://github.com/lauraain" class="contact-btn" target="_blank">💻 GitHub</a>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Laura Inês Lima Assunção</p>
-  </footer>
+    <footer>
+        <p>Feito por Laura Inês &copy; 2025</p>
+    </footer>
 
-  <script>
-    const toggleButton = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    toggleButton.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      toggleButton.textContent = menu.classList.contains('open') ? '✕' : '☰';
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
